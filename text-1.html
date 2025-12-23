@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Servidor - BlazerCraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+
+        .rule-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .rule-card:hover {
+            transform: translateY(-5px);
+            border-color: #10b981;
+            box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.3);
+        }
+
+        .discord-link {
+            color: #5865F2;
+            text-decoration: none;
+        }
+
+        .discord-link:hover {
+            text-decoration: underline;
+        }
+
+        .number-badge {
+            background: #10b981;
+            color: white;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header / Hero Section -->
+    <header class="relative py-16 px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute inset-0" style="background-image: radial-gradient(#10b981 1px, transparent 1px); background-size: 20px 20px;"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <div class="inline-block p-2 px-4 mb-4 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold tracking-wide uppercase">
+                Manual de Convivência - BlazerCraft
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">📖 Regras do Servidor</h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                Bem-vindo à nossa comunidade! Para garantir a melhor experiência para todos, pedimos que siga as diretrizes abaixo.
+            </p>
+        </div>
+    </header>
+
+    <!-- Rules Grid -->
+    <main class="max-w-5xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="rules-container">
+            <!-- Rule 1 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4">
+                <div class="number-badge">1</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Organização dos Chats</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Priorizamos e gostamos de manter os nossos chats limpos, sem nenhuma algazarra, tumultos, flood ou spam.</p>
+                </div>
+            </div>
+
+            <!-- Rule 2 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4">
+                <div class="number-badge">2</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Sem Divulgações</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Não permitimos divulgações sem autorização. Antes de postar links externos, consulte a staff.</p>
+                </div>
+            </div>
+
+            <!-- Rule 3 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4 border-l-4 border-l-red-500">
+                <div class="number-badge bg-red-500">3</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Respeito Mútuo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Proibido xingamentos pesados, bullying, assédio ou toxicidade. Não passe dos limites.</p>
+                </div>
+            </div>
+
+            <!-- Rule 4 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4 border-l-4 border-l-red-500">
+                <div class="number-badge bg-red-500">4</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Zero Discriminação</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">É proibido mensagens machistas, homofóbicas, preconceituosas ou apologia ao ódio.</p>
+                </div>
+            </div>
+
+            <!-- Rule 5 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4">
+                <div class="number-badge">5</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Segurança</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Não envie links maliciosos ou informações pessoais. Proteja a privacidade de todos.</p>
+                </div>
+            </div>
+
+            <!-- Rule 6 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4">
+                <div class="number-badge">6</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Contas Alternativas</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Não utilize contas "fakes" para burlar punições. Respeite as punições aplicadas.</p>
+                </div>
+            </div>
+
+            <!-- Rule 7 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4">
+                <div class="number-badge">7</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Ataques e Raids</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Organizar ou incentivar ataques a servidores é contra as diretrizes e gera banimento.</p>
+                </div>
+            </div>
+
+            <!-- Rule 8 -->
+            <div class="rule-card p-6 rounded-2xl flex gap-4 bg-emerald-500/5">
+                <div class="number-badge">8</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Diretrizes do Discord</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Siga sempre as normas globais do Discord para evitar punições em sua conta.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Call to Action -->
+        <footer class="mt-20 text-center">
+            <div class="p-8 rounded-3xl bg-slate-800/50 border border-slate-700">
+                <h2 class="text-2xl font-bold mb-4">Pronto para a diversão?</h2>
+                <p class="text-slate-400 mb-6">Escolha uma das opções abaixo para se conectar conosco.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <!-- Botão Jogar Agora (Link FalixNodes) -->
+                    <a href="https://client.falixnodes.net/join?server=blazercraft" target="_blank" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 rounded-xl font-bold transition-all flex items-center gap-2 text-lg shadow-lg shadow-emerald-900/20">
+                        <i class="fas fa-play"></i> Jogar Agora
+                    </a>
+                    <!-- Botão Discord (Link Atualizado) -->
+                    <a href="https://discord.gg/AcYRJDBStY" target="_blank" class="px-8 py-4 bg-[#5865F2] hover:bg-[#4752C4] rounded-xl font-bold transition-all flex items-center gap-2 text-lg shadow-lg shadow-indigo-900/20">
+                        <i class="fab fa-discord"></i> Entrar no Discord
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Animação de entrada suave dos cartões
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.rule-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 80 * index);
+            });
+        });
+    </script>
+</body>
+</html>
+
